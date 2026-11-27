@@ -1,5 +1,5 @@
 {
-  "playtime": 0,
+  "playtime": 4151.33,
   "modes": {
     "training": {
       "playtime": 0,
@@ -8,6 +8,16 @@
     "versus": {
       "playtime": 0,
       "clear": 0
+    },
+    "netplayversus": {
+      "playtime": 4151.33,
+      "clear": 21,
+      "clearcount": {
+        "spar": 7,
+        "yupia": 10,
+        "pish": 3,
+        "fllffl": 1
+      }
     }
   }
 }
