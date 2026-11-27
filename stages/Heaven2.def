@@ -1,0 +1,302 @@
+[Info]
+name = "HEAVEN 2"
+
+[Constants]
+StaticShadow = 1
+DynamicShadow = 0
+ShadowMulValue = -0.1
+ShadowRComponent = -6
+ShadowGComponent = -8
+ShadowBComponent = -10
+
+[camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -200
+boundright 	= 200
+boundhigh = -20
+boundlow = 0
+verticalfollow = .1
+tension = 100
+
+;--------------------------------------------------------
+[playerinfo]
+p1startx = -70          ;starting x coordinates
+p1starty = 0            ;starting y coordinates
+p1startz = 0            ;starting z coordinates
+p1facing = 1            ;direction player faces: 1=right, -1=left
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;left bound (x-movement)
+rightbound =  1000 ;right bound
+topbound  =  0   ;Top bound (z-movement)
+botbound  =  0    ;Bottom bound
+
+;--------------------------------------------------------
+[scaling]
+topz     = 0       ;top z-coordinate for scaling
+botz     = 50      ;bottom z-coordinate for scaling
+topscale = 1       ;scale to use at top
+botscale = 1.2     ;scale to use at bottom
+
+;--------------------------------------------------------
+[bound]
+screenleft = 15    ;dist from left of screen that player can move to
+screenright = 15   ;right edge
+
+;--------------------------------------------------------
+[stageinfo]
+ 
+zoffset = 200
+autoturn = 1
+resetbg = 0
+;--------------------------------------------------------
+[shadow]
+intensity = 60
+color = 20,20,20
+fade.range = 0,-50
+yscale = 0.3
+
+
+;--------------------------------------------------------
+[Music]
+ 
+[BGdef]
+spr = stages/Heaven2.sff
+debugbg = 0
+
+[bg Sky]
+type = normal
+spriteno = 1,0
+start = 0, 110
+delta = .2,.2
+tile = 1,0
+mask = 1
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 126
+delta = 0.2, 0.2
+mask = 1
+velocity = -1, 0
+tile = 1, 0
+id=3
+
+[bg The Tower of Heaven]
+type = normal
+spriteno = 5,0
+start = 0, 190
+delta = .24,.24
+tile = 1,0
+mask = 1
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 160
+delta =  0.3, 0.37
+mask = 1
+velocity = 3, 0
+tile = 1, 0
+id=2
+trans=add
+alpha=256,100
+
+
+[BGCtrlDef Heaven]
+looptime = -1
+ctrlID = 1,2,3
+[BGCtrl Heaven]
+type = enable
+time = 0,1,1
+value=0
+sctrlid=1
+
+[bg bPillar]
+type = normal
+spriteno = 9,2
+start = 35, 129
+delta = .45,.45
+tile = 0,0
+mask = 1
+sin.y=3,1000,0
+[bg bBanner]
+type = anim
+actionno = 6
+start = 35, 129
+delta = .45,.45
+tile = 0,0
+mask = 1
+sin.y=3,1000,0
+[bg bPillar]
+type = normal
+spriteno = 9,2
+start = -35, 129
+delta = .45,.45
+tile = 0,0
+mask = 1
+sin.y=-3,1000,0
+[bg bBanner]
+type = anim
+actionno = 7
+start = -35, 129
+delta = .45,.45
+tile = 0,0
+mask = 1
+sin.y=-3,1000,0
+
+[bg mPillar]
+type = normal
+spriteno = 9,1
+start = 73, 129
+delta = .6,.6
+tile = 0,0
+mask = 1
+sin.y=6,1000,50
+[bg mBanner]
+type = anim
+actionno = 4
+start = 73, 129
+delta = .6,.6
+tile = 0,0
+mask = 1
+sin.y=6,1000,50
+[bg mPillar]
+type = normal
+spriteno = 9,1
+start = -73, 129
+delta = .6,.6
+tile = 0,0
+mask = 1
+sin.y=-6,1000,50
+[bg mBanner]
+type = anim
+actionno = 5
+start = -73, 129
+delta = .6,.6
+tile = 0,0
+mask = 1
+sin.y=-6,1000,50
+
+[bg fPillar]
+type = normal
+spriteno = 9,0
+start = 125, 129
+delta = .8,.8
+tile = 0,0
+mask = 1
+sin.y=12,1000,100
+[bg fBanner]
+type = anim
+actionno = 2
+start = 125, 129
+delta = .8,.8
+tile = 0,0
+mask = 1
+sin.y=12,1000,100
+[bg fPillar]
+type = normal
+spriteno = 9,0
+start = -125, 129
+delta = .8,.8
+tile = 0,0
+mask = 1
+sin.y=-12,1000,100
+[bg fBanner]
+type = anim
+actionno = 3
+start = -125, 129
+delta = .8,.8
+tile = 0,0
+mask = 1
+sin.y=-12,1000,100
+
+[bg Fountain]
+type = anim
+actionno=1
+start = -35, 125
+delta = .8,.8
+tile = 1,0
+mask = 1
+sin.x=2,2000,0
+sin.y=-5,4000,0
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 185
+delta = 1, 1
+mask = 1
+velocity = -10, 0
+tile = 1, 0
+id=1
+trans=add
+alpha=256,200
+
+[bg Big Cloud]
+type = normal
+spriteno = 3,0
+start = -180, 120
+delta = .9,.9
+tile = 0,0
+mask = 1
+sin.x=10,2000,0
+sin.y=-12,4000,0
+
+[bg Grass]
+type = normal
+spriteno = 2,0
+start = 0, 130
+delta = 1,1
+tile = 1,0
+mask = 1
+
+[Begin Action 1]
+6,0, 0,0, 10
+6,1, 0,0, 10
+6,2, 0,0, 10
+
+; fb1
+[Begin Action 2]
+10,0, 0,0, 8
+10,1, 0,0, 8
+10,2, 0,0, 8
+
+; fb2
+[Begin Action 3]
+10,1, 0,0, 4
+10,2, 0,0, 8
+10,0, 0,0, 8
+10,1, 0,0, 4
+
+; mb1
+[Begin Action 4]
+11,1, 0,0, 12
+11,2, 0,0, 12
+11,0, 0,0, 12
+
+; mb2
+[Begin Action 5]
+11,2, 1,0, 6
+11,0, 0,0, 12
+11,1, 0,0, 12
+11,2, 0,0, 6
+
+; bb1
+[Begin Action 6]
+12,2, 0,0, 18
+12,0, 0,0, 18
+12,1, 0,0, 18
+
+; bb2
+[Begin Action 7]
+12,0, 0,0, 9
+12,1, 0,0, 18
+12,2, 0,0, 18
+12,0, 0,0, 9
+

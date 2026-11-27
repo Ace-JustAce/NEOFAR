@@ -1,0 +1,13 @@
+{
+  "playtime": 0,
+  "modes": {
+    "training": {
+      "playtime": 0,
+      "clear": 0
+    },
+    "versus": {
+      "playtime": 0,
+      "clear": 0
+    }
+  }
+}

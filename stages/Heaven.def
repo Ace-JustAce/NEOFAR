@@ -1,0 +1,294 @@
+[Info]
+name = "HEAVEN"
+round1def = stages/Heaven.def
+round2def = stages/Heaven2.def
+round3def = stages/Heaven3.def
+
+[Constants]
+
+StaticShadow = 1
+DynamicShadow = 0 
+ShadowMulValue = -0.1
+ShadowRComponent = -17
+ShadowGComponent = -10
+ShadowBComponent = -15
+
+
+[camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -200
+boundright 	= 200
+boundhigh = -20
+boundlow = 0
+verticalfollow = .1
+tension = 100
+
+;--------------------------------------------------------
+[playerinfo]
+p1startx = -70          ;starting x coordinates
+p1starty = 0            ;starting y coordinates
+p1startz = 0            ;starting z coordinates
+p1facing = 1            ;direction player faces: 1=right, -1=left
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;left bound (x-movement)
+rightbound =  1000 ;right bound
+topbound  =  0   ;Top bound (z-movement)
+botbound  =  0    ;Bottom bound
+
+;--------------------------------------------------------
+[scaling]
+topz     = 0       ;top z-coordinate for scaling
+botz     = 50      ;bottom z-coordinate for scaling
+topscale = 1       ;scale to use at top
+botscale = 1.2     ;scale to use at bottom
+
+;--------------------------------------------------------
+[bound]
+screenleft = 15    ;dist from left of screen that player can move to
+screenright = 15   ;right edge
+
+;--------------------------------------------------------
+[stageinfo]
+ 
+zoffset = 200
+autoturn = 1
+resetbg = 0
+;--------------------------------------------------------
+[shadow]
+intensity = 60
+color = 20,20,20
+fade.range = 0,-50
+yscale = 0.3
+
+
+;--------------------------------------------------------
+[Music]
+ 
+[BGdef]
+spr = stages/Heaven.sff
+debugbg = 0
+
+[bg Sky]
+type = normal
+spriteno = 1,0
+start = 0, 125
+delta = .2,.2
+tile = 1,0
+mask = 1
+
+
+[BGCtrlDef Heaven]
+looptime = -1
+ctrlID = 1,2,3
+[BGCtrl Heaven]
+type = enable
+time = 0,1,1
+value=0
+sctrlid=1
+
+[bg bClouds]
+type = normal
+spriteno = 8,0
+start = 20, 140
+delta = .3,.3
+tile = 1,0
+mask = 1
+velocity=-.1,0
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 140
+delta = 0.4, 0.4
+mask = 1
+velocity = -1, 0
+tile = 1, 0
+id=3
+
+[bg The Tower of Heaven]
+type = normal
+spriteno = 5,0
+start = -40, 140
+delta = .5,.5
+tile = 1,0
+mask = 1
+
+[bg Crowd]
+type = normal
+spriteno = 9,8
+start = -650, 100
+delta = .6,.6
+tile = 1,0
+mask = 1
+sin.y=4,800,0
+tilespacing = 1000,0
+velocity = .15, 0
+
+[bg tree]
+type = normal
+spriteno = 4,0
+start = 80, 125
+delta = .7,.7
+tile = 1,0
+mask = 1
+sin.x=-2,4000,0
+sin.y=4,8000,0
+
+[bg Clouds]
+type = normal
+spriteno = 7,0
+start = 20, 140
+delta = .7,.7
+tile = 1,0
+mask = 1
+velocity=-.2,0
+
+[bg Painter]
+type = normal
+spriteno = 9,7
+start = 500, 160
+delta = .72,.72
+tile = 1,0
+mask = 1
+sin.y=-7,800,0
+tilespacing = 1000,0
+velocity = -.15, 0
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 160
+delta = .75,.75
+mask = 1
+velocity = 3, 0
+tile = 1, 0
+id=2
+trans=add
+alpha=256,100
+
+[bg Fountain]
+type = anim
+actionno=1
+start = -35, 125
+delta = .8,.8
+tile = 1,0
+mask = 1
+sin.x=2,2000,0
+sin.y=-5,4000,0
+
+[bg Chess]
+type = normal
+spriteno = 9,5
+start = -500, 160
+delta = .82,.82
+tile = 1,0
+mask = 1
+sin.y=7,1300,0
+velocity = .1, 0
+tilespacing = 1000,0
+
+[bg Purple]
+type = normal
+spriteno = 9,2
+start = 750, 160
+delta = .85,.85
+tile = 1,0
+mask = 1
+sin.y=-8,400,0
+velocity = -.35, 0
+tilespacing = 1000,0
+
+[bg Big Cloud]
+type = normal
+spriteno = 3,0
+start = 0, 125
+delta = .9,.9
+tile = 1,0
+mask = 1
+sin.x=10,2000,0
+sin.y=-12,4000,0
+
+[bg Blue]
+type = normal
+spriteno = 9,0
+start = -200, 130
+delta = .95,.95
+tile = 1,0
+tilespacing = 1000,0
+mask = 1
+velocity = .25, 0
+sin.y=-5,500,0
+
+[bg Cyan]
+type = normal
+spriteno = 9,6
+start = -1200, 130
+delta = .95,.95
+tile = 1,0
+mask = 1
+tilespacing = 1000,0
+velocity = .25, 0
+sin.y=5,500,0
+
+[bg Green]
+type = normal
+spriteno = 9,3
+start = 2500, 120
+delta = 1,1
+tile = 1,0
+mask = 1
+sin.y=-5,200,0
+velocity = -.75, 0
+tilespacing = 3000,0
+[bg Yellow]
+type = normal
+spriteno = 9,4
+start = 2500, 120
+delta = 1,1
+tile = 1,0
+mask = 1
+sin.y=5,200,0
+velocity = -.75, 0
+tilespacing = 3000,0
+
+[BG Heaven]
+type  =normal
+spriteno=3011,0
+start = -40, 185
+delta = 1, 1
+mask = 1
+velocity = -15, 0
+tile = 1, 0
+id=1
+trans=add
+alpha=256,200
+
+[bg Grass]
+type = normal
+spriteno = 2,0
+start = 0, 133
+delta = 1,1
+tile = 1,0
+mask = 1
+
+[bg Lesbiabs]
+type = normal
+spriteno = 9,1
+start = -1100, 130
+delta = 1,1
+tile = 1,0
+mask = 1
+velocity = .45, 0
+sin.y=4,300,0
+tilespacing = 1000,0
+
+[Begin Action 1]
+6,0, 0,0, 10
+6,1, 0,0, 10
+6,2, 0,0, 10

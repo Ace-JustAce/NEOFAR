@@ -1,0 +1,113 @@
+;New Breaker Mechanic
+
+;---------------------------------------------------------------------------
+; Breaker Bar Visual
+[Statedef 8000]
+type    = U
+physics = N
+anim = F9999
+ctrl = 0
+sprpriority = -5
+
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = 1
+v = 10 
+value = (root,map(BREAKER)-60)*-1
+ignorehitpause = 1
+persistent = 1
+
+
+;P1 Side
+[State Breaker]
+type = Text
+trigger1 = roundstate = 2
+trigger1 = teamside = 1
+trigger1 = root,Map(Breaker)>=60
+text = "COMBO BREAKER READY"
+align = 0
+pos =190,155
+scale = 1.5,1.5
+color =254,233,130
+font=2
+layerno=0
+;P1 Side
+[State Breaker]
+type = Text
+trigger1 = roundstate = 2
+trigger1 = teamside = 1
+trigger1 = root,Map(Breaker)<60
+trigger1 = root,Map(Breaker)>=50
+text = "COMBO BREAKER IN %d..."
+params = var(10)
+align = 0
+pos =190,155
+scale = 1.5,1.5
+color =154,133,30
+font=2
+layerno=0
+
+
+;P2 Side
+[State Breaker]
+type = Text
+trigger1 = roundstate = 2
+trigger1 = teamside = 2
+trigger1 = root,Map(Breaker)>=60
+text = "COMBO BREAKER READY"
+align = 0
+pos =1013,155
+scale = 1.5,1.5
+color =255,156,205
+font=2
+layerno=0
+;P2 Side
+[State Breaker]
+type = Text
+trigger1 = roundstate = 2
+trigger1 = teamside = 2
+trigger1 = root,Map(Breaker)<60
+trigger1 = root,Map(Breaker)>=50
+text = "COMBO BREAKER IN %d..."
+params = var(10)
+align = 0
+pos =1013,155
+scale = 1.5,1.5
+color =155,56,105
+font=2
+layerno=0
+
+
+;---------------------------------------------------------------------------
+[Statedef -2]
+
+[State 0, DisplayToClipboard]
+type = DisplayToClipboard
+trigger1 = 1
+text = "Breaker = %f"
+params = Map(Breaker)
+
+[State 0, Helper]
+type = Helper
+trigger1 = numhelper(8000) <= 0
+name = "BREAKER"
+stateno = 8000
+id = 8000
+pos = 0,0
+ownpal = 0
+
+[State Breaker Bar Add]
+type = mapset
+trigger1 = roundstate = [0,1]
+map = "Breaker"
+value = 60
+
+[State Breaker Bar Add]
+type = mapadd
+triggerall = roundstate != [0,1]
+triggerall = Map(Breaker)<60
+trigger1 = gametime%60=0
+map = "Breaker"
+value = 1
+

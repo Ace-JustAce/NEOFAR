@@ -1,0 +1,46 @@
+<#49F43A>Universal:</>
+Grab			^LP_+^LK
+Reversal Art		^SP_+^SK
+Guard Rush <#F7F95D>(1/2 Bar)</>		input ^2P or ^2K while in block stun
+EX Moves <#F7F95D>(1 Bar)</>		input ^2P or ^2K during a special
+Combo Breaker <#F7F95D>(2 Bars)</>		^L_+^OH while in a combo
+
+<#d576dc>Passive Ability: [Spoof]</>
+S.P.A.R can dash mid air by pressing _F_F or _B_B
+This dash becomes enhanced during the 3 bar super.
+
+<#2ed8ea>Command Normals & Strings:</>
+
+Electric Blight			_F^LP
+
+Sit Down		_F^SP ^SP
+Stay Put		_F^SP ^SK
+I Don't Wanna See You		_B^SP ^OH
+Come Over Here Let's Talk		_B^SP ^L
+The Crusher		^L ^L
+Kicking and Screaming			^LK ^SK ^SK
+Error/?%#: String Not Found			^LP ^LK ^LP ^SP ^LK ^SK
+
+<#f0f000>Special Moves:</>
+
+Twirling Cuts (EX OK)			_QCF^P
+Plasma Discharge (EX OK)                                                 		_DSF^K
+You're Not Gonna Like This (EX OK)                                          		_HCB^K
+Comin' Through (EX OK)			_QCF^K
+_!Training Palm			^LP                                            		                                   		
+_!You're Worthless			^SP
+_!Dashing Past			^LK
+_!Stanky Leg Failure			^SK
+_!Die Idiot			^L during EX Version
+_!Nah Nvm			_B
+Hack Off (EX OK)			_QCB^P
+_!Swift Slice			^LP                                            		                                   		
+_!Big Bonk			^SP
+_!Switchero			^LK
+_!Doink			^SK
+_!Leave Me Alone!			_B during EX version
+
+<#e32d1b>Hyper Arts:</>
+
+EYE SHOT <#F7F95D>(2 Bars)</>                                                		_QCF_QCF^P
+CLOCKS TICKING <#F7F95D>(3 Bars)</>                                                    		_QCB_QCB^K

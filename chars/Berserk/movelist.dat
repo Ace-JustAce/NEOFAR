@@ -1,0 +1,30 @@
+<#49F43A>Universal:</>
+Grab			^LP_+^LK
+Reversal Art (Hold OK)		^SP_+^SK
+Guard Rush <#F7F95D>(1/2 Bar)</>		input ^2P or ^2K while in block stun
+EX Moves <#F7F95D>(1 Bar)</>		input ^2P or ^2K during a special
+Combo Breaker <#F7F95D>(2 Bars)</>		^L_+^OH while in a combo
+
+<#2ed8ea>Command Normals & Strings:</>
+
+Terminate			_F^SK
+Lunatic Lunging Clasp		_F^SP
+Corpse Raise			_D^LP_+^LK
+
+Psychotic Shatter		^SP ^SP
+Barbed Heels		_F^SK ^SK
+Skull Crushing Stomp		_F^SK ^OH
+
+<#f0f000>Special Moves:</>
+
+Disfigured Havoc (EX OK)                                          		_HCF^P
+Ruin Crush (EX OK)                                        	     		_HCB^K
+Hatred Spike (EX OK)                                                 		_DSF^P
+Blight Scar (EX OK)                                                    		_QCF^K
+Brainrot (EX OK)                                            		_QCB^P                                   		
+Devastate (AIR ONLY) (EX OK)			_QCF^P
+
+<#e32d1b>Hyper Arts:</>
+
+ANNIHILATION <#F7F95D>(2 Bars)</>                                                     		_QCB_QCB^P
+ERADICATION <#F7F95D>(3 Bars)</>                                                		_QCF_QCF^P

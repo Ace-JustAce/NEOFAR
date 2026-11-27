@@ -1,0 +1,36 @@
+<#49F43A>Universal:</>
+Grab			^LP_+^LK
+Reversal Art		^SP_+^SK
+Guard Rush <#F7F95D>(1/2 Bar)</>		input ^2P or ^2K while in block stun
+EX Moves <#F7F95D>(1 Bar)</>		input ^2P or ^2K during a special
+Combo Breaker <#F7F95D>(2 Bars)</>		^L_+^OH while in a combo
+
+<#d576dc>Passive Ability: [Street Smarts]</>
+Jojo is able to cancel all of his Light versions of specials
+into Strong Specials on hit
+Jojo is also capable of canceling attacks for a bar by 
+pressing ^LK^HK^OH as the move connects
+
+<#2ed8ea>Command Normals & Strings:</>
+
+Gravity Shift (AIR ONLY)			_D^SK
+Dust Kick			_B^SK
+Duck Uppercut			_DF^SP
+_!Feint			Hold ^SP
+
+Street Fighting		^SP ^LK
+Direct Damage		^SP ^SP
+Blurry Flurry		^LP ^LP
+
+<#f0f000>Special Moves:</>
+
+Pulverize (EX OK)		_QCF^P
+Evade (EX OK)                                        			   _QCF ^K
+_!Look Out!			_UB, _U, or _UF during ^SK version
+Knuckle Duster (EX OK)                                                 		_D_D ^P
+Rising Fist (EX OK)                                          		_DSF^P
+
+<#e32d1b>Hyper Arts:</>
+
+MENACING MELEE <#F7F95D>(2 Bars)</>                                                 		_QCF_QCF^P
+CRIPPLING COMBO <#F7F95D>(3 Bars)</>                                                    		_QCF_QCF^K
